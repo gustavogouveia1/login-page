@@ -23,6 +23,14 @@ main {
     background-color: $gray-bg;
   }
 
+  #main-image {
+    max-width: 750px;
+  }
+
+  #logo {
+    max-width: 300px;
+  }
+
   .form-section {
     flex-grow: 0.3;
     padding: 0 35px;
@@ -73,6 +81,10 @@ main {
       background-color: transparent;
       padding: 12px 24px;
       cursor: pointer;
+
+      &:disabled {
+        opacity: 0.8;
+      }
 
     &.btn-primary {
       background-color: $primary-color;
